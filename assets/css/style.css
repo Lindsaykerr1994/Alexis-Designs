@@ -1,0 +1,160 @@
+/* ----- Google Fonts Reference -----*/
+
+@import url('https://fonts.googleapis.com/css?family=Gotu|Montserrat:100,200,300,400,500,600,700');
+
+/* ----- Colours ----- */
+
+body{
+    background-color: #fffaf0;
+    font-family: "Montserrat", sans-serif;
+    
+}
+#title-header, #title-footer{
+    color:#cd853f;
+}
+
+/* ----- Underline Reveal - Colour -----*/
+/* I was able to adjust these specifications from the Github documentation: */
+/* https://github.com/IanLunn/Hover/blob/master/css/hover.css */
+
+
+.title-logo .hvr-underline-from-center:before {
+    background-color:#cd853f;
+    height: 2px;
+    transition-duration: 0.4s;
+}
+
+.hvr-underline-from-center:before {
+    background-color:#cd853f;
+    height: 1px;
+    transition-duration: 0.4s;
+}
+
+/* ----- Dimensions ----- */
+/* ----- This section dictates the dimensions of each element necessary ----- */
+
+
+
+#title-main-content{
+    height:500px;
+}
+
+@media (max-width:800px){
+
+    #title-main-content{
+        height:300px;
+}
+}
+
+
+/* ----- Title Header ----- */
+/* ----- This section dictates the specifications of text ----- */
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.fine{
+    font-weight: 200;
+}
+
+/* ----- Title Header ----- */
+/* ----- This will serve as my logo for the title page ----- */
+
+.title-logo {
+    text-align: center;
+    padding-top:150px;
+}
+
+.title-logo a {
+    text-decoration: none;
+    color: #cd853f;
+    font-size: 36px;
+    letter-spacing: 6px;
+    padding:0 25px;
+}
+
+.title-motto {
+    padding-top:15px;
+    letter-spacing: 2px;
+}
+
+.motto-divider{
+    margin: 2px;
+    border:0;
+    display:none;
+}
+
+/* ----- Navigation Bar ----- */
+/* ----- All specifcations for the nav-bar will be under this. Split into 3 sections ----- */
+/* ----- Title page nav-bar, social links bar, Content pages nav-bar ----- */
+/* ----- Title Page Nav-Bar ----- */
+
+.title-nav-bar {
+    padding-top:50px;
+    text-align:center;
+}
+
+.title-nav-item{
+    width:150px;
+    border-left: 1px solid #cd853f;
+    border-right: 1px solid #cd853f;
+    padding: 10px 0px;
+}
+
+.title-nav-item a {
+    text-decoration: none;
+    color: #cd853f;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 0px 20px;
+    
+}
+
+/* ----- Social Links Bar ----- */
+
+.title-social-bar{
+    width:240px;
+    margin-top:20px;
+    border-left: 1px solid #cd853f;
+    border-right: 1px solid #cd853f;
+    font-size:20px;
+}
+
+.title-social-bar i{
+    padding:10px 0;
+    margin:0 20px;
+}
+
+/* ----- Media Queries ----- */
+
+@media (max-width: 800px){
+    
+    .title-logo{
+        padding-top:100px;
+    }
+
+    .title-logo a{
+        font-size:30px;
+    }
+
+    .motto-divider{
+        display:block;
+    }
+
+    .title-nav-item{
+        display:block;
+        width:250px;
+        padding:10px 0;
+    }
+
+    .title-nav-item a {
+        font-size: 16px;
+    }   
+
+    .title-nav-bar {
+        padding-top:25px;
+    }
+
+}
