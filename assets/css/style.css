@@ -187,6 +187,10 @@ body{
     padding:5px;
     overflow: hidden;
 }
+/* ----- This hides the secondary carousels on screens max-width:1600px -----*/
+.seconndary-carousel{
+    display: none;
+}
 
 .carousel-control-prev, .carousel-control-next{
     opacity: 0;
@@ -245,4 +249,72 @@ body{
     .title-social-bar{
         width:248px;
     }
+}
+
+@media (min-width: 2000px){
+
+    .title-logo{
+        padding-top:200px;
+    }
+    .title-logo a{
+        font-size:80px;
+    }
+    .title-motto, .title-social-bar a{
+        font-size:48px;
+    }
+    .title-nav-list{
+        width:75%;
+    }
+    .title-nav-list li{
+        width:400px;
+    }
+    .title-nav-item a{
+        font-size: 40px;
+    }   
+    .title-nav-bar {
+        margin-top:75px;
+        padding-top:25px;
+        align-items: center;
+    }
+    .title-social-bar{
+        margin-top:50px;
+        width:744px;
+    }
+
+    /* ----- This redefines the dimensions of the carousel ----- */
+
+    #title-main-content{
+        align-content: center;
+        height:800px;
+    }
+    #carouselExampleInterval{
+        width:700px;
+        height:700px;
+    }
+    .carousel-container{
+        margin:75px 25px;
+        max-width:700px;
+        max-height:700px;
+    }
+    .carousel-inner{
+        margin:0 auto;
+        width:700px;
+        height:700px;
+    }
+     /* ----- This introduces the secondary carousels in a large screen ----- */
+     /* ----- This removes the main carousel in a large screen  ----- */
+    .seconndary-carousel{
+        display: inline-block;
+    }
+    .main-carousel{
+        display: none;
+    }
+    .carousel-inner{
+        margin:0 auto;
+        width:700px;
+        height:700px;
+    }
+
+
+    /* ----- This introduces the secondary carousels in a large screen ----- */
 }
