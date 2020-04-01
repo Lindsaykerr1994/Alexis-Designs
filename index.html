@@ -36,37 +36,91 @@
 	<section id="title-header">
 		<div class="row">
 			<div class="col title-logo mx-auto">
-				<a href="#" class="uppercase fine hvr-underline-from-center">Alexis Designs</a>
+				<a href="#" class="uppercase hvr-underline-from-center">Alexis Designs</a>
 				<div class="title-motto">
-					<span class="fine uppercase ">Fascinated by batik.</span>
+					<span class="uppercase ">Fascinated by batik.</span>
 					<hr class="motto-divider">
-					<span class="fine uppercase ">Bespoke compositions.</span>
+					<span class="uppercase ">Bespoke creations.</span>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="title-main-content">Carousel Goes Here</section>
+	<section id="title-main-content">
+		<div class="carousel-container">
+        <!-- This carousel feature was resourced from Bootstraps components-->
+			<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-interval="4000">
+						<img src="assets/images/carousel/blue-batik1.jpg" class="d-block w-100 " alt="Blue batik with flowers">
+                    </div>
+					<div class="carousel-item" data-interval="4000">
+						<img src="assets/images/carousel/blue-jacket-catch.jpg" class="d-block w-100 " alt="Light blue jacket close-up">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+						<img src="assets/images/carousel/glasses-case-collection.jpg" class="d-block w-100" alt="Collection of glasses cases">
+                    </div>
+                    <div class="carousel-item" data-interval="4000">
+				    	<img src="assets/images/carousel/breakfast-table-tissues.jpg" class="d-block w-100 " alt="Breakfast scene with tissue box">
+                     </div> 
+                     <div class="carousel-item" data-interval="4000">
+						<img src="assets/images/carousel/blue-quilt-display.jpg" class="d-block w-100" alt="Blue and white quilt on display">
+                    </div>
+                    <!-- This last photo should not have 'data-interval'-->
+					<div class="carousel-item">
+						<img src="assets/images/carousel/red-batik1.jpg" class="d-block w-100 " alt="Red batik with flowers">
+                    </div>
+				</div>
+				<!-- This section is the controls to move to the next/previous image.-->
+                <!-- I have made this viewable when hovering over-->
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+					data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+					data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</section>
 	<section id="title-footer">
 		<div class="row title-nav-bar">
-			<div class="col ">
-				<ul class="title-nav-list list-inline">
-					<li class="list-inline-item title-nav-item uppercase fine hvr-underline-from-center mx-auto">
+			<div class="col text-center">
+				<ul class="list-inline title-nav-list ">
+					<li class="list-inline-item title-nav-item uppercase hvr-underline-from-center mx-auto">
 						<a href="">About</a>
 					</li>
-					<li class="list-inline-item title-nav-item uppercase fine hvr-underline-from-center mx-auto">
+					<!-----The Products menu will dropdown in screens min-width:800----->
+					<li class="list-inline-item title-nav-item uppercase hvr-underline-from-center mx-auto products ">
 						<a href="">Products</a>
 					</li>
-					<li class="list-inline-item title-nav-item uppercase fine hvr-underline-from-center mx-auto">
+					<li class="menu-container product-menu">
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"
+									class="product-item hvr-underline-from-center uppercase fine">Quilts</a></li>
+							<li class="list-inline-item"><a href="#"
+									class="product-item hvr-underline-from-center uppercase fine">Jackets</a></li>
+							<li class="list-inline-item"><a href="#"
+									class="product-item hvr-underline-from-center uppercase fine">Bags</a></li>
+							<li class="list-inline-item"><a href="#"
+									class="product-item hvr-underline-from-center uppercase fine">Miscellaneous</a></li>
+						</ul>
+					</li>
+					<li class="list-inline-item title-nav-item uppercase hvr-underline-from-center mx-auto">
 						<a href="">Contact</a>
 					</li>
+					<!-----This is the dropdown menu----->
+
 				</ul>
 			</div>
 		</div>
 		<div class="title-social-section text-center">
 			<div class="title-social-bar mx-auto">
-				<span class="hvr-underline-from-center"><i class="fa fa-facebook-square"></i></span>
-                <span class="hvr-underline-from-center"><i class="fa fa-instagram"></i></span>
-                <span class="hvr-underline-from-center"><i class="fa fa-envelope"></i></span>
+				<a class="hvr-underline-from-center"><i class="fa fa-facebook-square"></i></a>
+				<a class="hvr-underline-from-center"><i class="fa fa-instagram"></i></a>
+				<a class="hvr-underline-from-center"><i class="fa fa-envelope"></i></a>
 			</div>
 		</div>
 	</section>

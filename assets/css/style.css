@@ -5,10 +5,14 @@
 /* ----- Colours ----- */
 
 body{
-    background-color: #fffaf0;
     font-family: "Montserrat", sans-serif;
+    /* background-color: #fffaf0; */
     
+    background-image: url("../images/a-d-bg2.jpeg"); 
 }
+
+
+
 #title-header, #title-footer{
     color:#cd853f;
 }
@@ -39,15 +43,8 @@ body{
     height:500px;
 }
 
-@media (max-width:800px){
 
-    #title-main-content{
-        height:300px;
-}
-}
-
-
-/* ----- Title Header ----- */
+/* ----- Text ----- */
 /* ----- This section dictates the specifications of text ----- */
 
 .uppercase{
@@ -61,9 +58,14 @@ body{
 /* ----- Title Header ----- */
 /* ----- This will serve as my logo for the title page ----- */
 
+#title-header{
+    padding-bottom:25px;
+}
+
 .title-logo {
     text-align: center;
-    padding-top:150px;
+    padding-top:125px;
+    font-weight:300;
 }
 
 .title-logo a {
@@ -79,6 +81,10 @@ body{
     letter-spacing: 2px;
 }
 
+.title-motto span{
+    padding:0 5px;
+}
+
 .motto-divider{
     margin: 2px;
     border:0;
@@ -91,18 +97,22 @@ body{
 /* ----- Title Page Nav-Bar ----- */
 
 .title-nav-bar {
-    padding-top:50px;
+    padding-top:10px;
     text-align:center;
+    
+}
+.title-nav-list li{
+    width: 180px;
+    
 }
 
 .title-nav-item{
-    width:150px;
     border-left: 1px solid #cd853f;
     border-right: 1px solid #cd853f;
     padding: 10px 0px;
 }
 
-.title-nav-item a {
+.title-nav-item a, .product-btn{
     text-decoration: none;
     color: #cd853f;
     font-size: 16px;
@@ -110,6 +120,45 @@ body{
     letter-spacing: 2px;
     padding: 0px 20px;
     
+}
+
+.title-nav-item:hover{
+    background-color: rgba(255, 250, 240,0.1);
+
+}
+
+.title-nav-item a:hover{
+    font-weight:400;
+}
+
+
+/* ----- This is a sub-division of the Title Page Nav-Bar ----- */
+/* ----- Products Dropdown ----- */
+
+
+.product-menu {
+    display: none;
+    position: fixed;
+    align-self: flex-end;
+    background-color: #fffaf0;
+    border: 1px solid #cd853f;
+    width:180px;
+    z-index: 1; 
+}
+
+.product-menu li a {
+    color: #cd853f;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    
+}
+/*-----The Products menu will dropdown in screens min-width:800-----*/
+@media (min-width:800px){
+
+    .products:hover + .product-menu, .product-menu:hover{
+        display:inline-block;
+    }
 }
 
 /* ----- Social Links Bar ----- */
@@ -127,12 +176,48 @@ body{
     margin:0 20px;
 }
 
+
+/* ----- Carousel -----*/
+.carousel-container{
+    margin:25px auto;
+    max-width:450px;
+    max-height:450px;
+}
+.carousel-inner{
+    padding:5px;
+    overflow: hidden;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    opacity: 0;
+}
+
+.carousel-container:hover + .carousel-control-prev +.carousel-control-next +{
+    opacity: 0.5;
+}
+
+@media (max-width:800px){
+
+    #title-main-content{
+        height:300px;
+    }
+
+    .carousel-container{
+        margin:0 auto;
+        width:300px;
+        height:300px;
+    }
+}
+
+
 /* ----- Media Queries ----- */
 
 @media (max-width: 800px){
     
+    /* ----- This section dictates the layout of mobile screens (e.g. iPhone) ----- */
+    
     .title-logo{
-        padding-top:100px;
+        padding-top:50px;
     }
 
     .title-logo a{
@@ -157,4 +242,7 @@ body{
         padding-top:25px;
     }
 
+    .title-social-bar{
+        width:248px;
+    }
 }
