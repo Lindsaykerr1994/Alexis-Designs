@@ -11,11 +11,13 @@ body{
     background-image: url("../images/a-d-bg2.jpeg"); 
 }
 
-
-
-#title-header, #title-footer{
+#title-header, #title-footer, .branch-header, .branch-footer{
     color:#cd853f;
 }
+.branch-header{
+    background-color:rgba(255, 250, 240,0.8);
+}
+
 
 /* ----- Underline Reveal - Colour -----*/
 /* I was able to adjust these specifications from the Github documentation: */
@@ -27,7 +29,11 @@ body{
     height: 2px;
     transition-duration: 0.4s;
 }
-
+.branch-logo .hvr-underline-from-center:before {
+    background-color:#cd853f;
+    height: 2px;
+    transition-duration: 0.4s;
+}
 .hvr-underline-from-center:before {
     background-color:#cd853f;
     height: 1px;
@@ -37,12 +43,13 @@ body{
 /* ----- Dimensions ----- */
 /* ----- This section dictates the dimensions of each element necessary ----- */
 
-
-
 #title-main-content{
     height:500px;
 }
-
+.branch-header{
+    height:100px;
+    border-bottom:1px solid #cd853f;
+}
 
 /* ----- Text ----- */
 /* ----- This section dictates the specifications of text ----- */
@@ -50,7 +57,6 @@ body{
 .uppercase{
     text-transform: uppercase;
 }
-
 .fine{
     font-weight: 200;
 }
@@ -61,13 +67,11 @@ body{
 #title-header{
     padding-bottom:25px;
 }
-
 .title-logo {
     text-align: center;
     padding-top:125px;
     font-weight:300;
 }
-
 .title-logo a {
     text-decoration: none;
     color: #cd853f;
@@ -75,66 +79,84 @@ body{
     letter-spacing: 6px;
     padding:0 25px;
 }
-
 .title-motto {
     padding-top:15px;
     letter-spacing: 2px;
 }
-
 .title-motto span{
     padding:0 5px;
 }
-
 .motto-divider{
     margin: 2px;
     border:0;
     display:none;
 }
 
+/* ----- Branch Header ----- */
+.branch-logo, .branch-nav-list{
+    padding-top:25px;
+    font-weight:300;
+    display:inline-block;
+}
+.branch-logo{
+    padding-left:35px;
+}
+.branch-logo a {
+    text-decoration: none;
+    color: #cd853f;
+    font-size: 36px;
+    letter-spacing: 6px;
+    padding-right:25px;
+    line-height:40px;
+}
+.logo-divider{
+    display:none;
+    margin:0px;
+    border:0;
+}        
+.branch-motto{
+    padding-right:25px;
+    color: #cd853f;
+}
+.branch-motto span{
+    padding-right:10px;
+}
+
 /* ----- Navigation Bar ----- */
 /* ----- All specifcations for the nav-bar will be under this. Split into 3 sections ----- */
-/* ----- Title page nav-bar, social links bar, Content pages nav-bar ----- */
+/* ----- Title page nav-bar, Branch page nav-bar, Social links bar ----- */
 /* ----- Title Page Nav-Bar ----- */
 
 .title-nav-bar {
     padding-top:10px;
     text-align:center;
-    
 }
 .title-nav-list li{
     width: 180px;
-    
 }
-
 .title-nav-item{
     border-left: 1px solid #cd853f;
     border-right: 1px solid #cd853f;
     padding: 10px 0px;
 }
-
-.title-nav-item a, .product-btn{
+.title-nav-item a{
     text-decoration: none;
     color: #cd853f;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 2px;
-    padding: 0px 20px;
-    
+    padding: 0px 20px; 
 }
-
 .title-nav-item:hover{
-    background-color: rgba(255, 250, 240,0.1);
+    background-color: rgba(255, 250, 240,0.2);
 
 }
-
 .title-nav-item a:hover{
     font-weight:400;
 }
 
-
 /* ----- This is a sub-division of the Title Page Nav-Bar ----- */
 /* ----- Products Dropdown ----- */
-
 
 .product-menu {
     display: none;
@@ -145,7 +167,6 @@ body{
     width:180px;
     z-index: 1; 
 }
-
 .product-menu li a {
     color: #cd853f;
     text-align: center;
@@ -159,6 +180,28 @@ body{
     .products:hover + .product-menu, .product-menu:hover{
         display:inline-block;
     }
+}
+
+/* ----- Branch Page Nav-Bar ----- */
+
+.branch-nav-list{
+    display:flex;
+    width:auto;
+    line-height: 50px;
+    padding-right:10px;
+    margin-bottom: 0;
+}
+.branch-nav-list li{
+    text-align:center;
+    width: auto;
+    padding:0 10px;
+}
+.branch-nav-item a{
+    text-decoration: none;
+    color: #cd853f;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;   
 }
 
 /* ----- Social Links Bar ----- */
@@ -175,7 +218,6 @@ body{
     padding:10px 0;
     margin:0 20px;
 }
-
 
 /* ----- Carousel -----*/
 .carousel-container{
@@ -219,42 +261,77 @@ body{
 @media (max-width: 800px){
     
     /* ----- This section dictates the layout of mobile screens (e.g. iPhone) ----- */
-    
+    /* ----- This section controls the title page ----- */
     .title-logo{
         padding-top:50px;
     }
-
     .title-logo a{
         font-size:30px;
     }
-
     .motto-divider{
         display:block;
     }
-
     .title-nav-item{
         display:block;
         width:250px;
         padding:10px 0;
     }
-
     .title-nav-item a {
         font-size: 16px;
     }   
-
     .title-nav-bar {
         padding-top:25px;
     }
-
     .title-social-bar{
         width:248px;
     }
+    /* ----- This section controls the branch pages ----- */
+    .branch-header{
+        height:auto;
+    }
+    .branch-logo{
+        padding: 10px 25px;
+        background-color: rgba(255, 250, 240,1);
+    }
+    .branch-logo a{
+        line-height:25px;
+        font-size:24px;
+    }
+    .logo-divider{
+        display:block;
+    }
+    .branch-motto span{
+        font-size: 10px;
+    }
+    .motto-divider{
+        display: none;
+    }
+    .branch-nav-bar{
+        background-color: rgba(255, 250, 240,0.2);
+    }
+    .branch-nav-list li{
+        width:auto;
+        padding:0;
+    }
+    .branch-nav-item a {
+        font-size: 12px;
+        margin: 0 5px;
+    }
 }
-
+@media (max-width:575px){
+    .branch-logo{
+        border-bottom:1px solid #cd853f;
+    }
+    .branch-nav-list{
+        
+        padding:0;
+        line-height: 25px;
+    }
+}
 @media (min-width: 2000px){
 
     .title-logo{
-        padding-top:200px;
+        padding-top:100px;
     }
     .title-logo a{
         font-size:80px;
@@ -272,9 +349,12 @@ body{
         font-size: 40px;
     }   
     .title-nav-bar {
-        margin-top:75px;
+        margin-top:25px;
         padding-top:25px;
         align-items: center;
+    }
+    .product-nav-item a{
+        font-size:28px;
     }
     .title-social-bar{
         margin-top:50px;
@@ -314,7 +394,8 @@ body{
         width:700px;
         height:700px;
     }
-
-
-    /* ----- This introduces the secondary carousels in a large screen ----- */
+    /* ----- This section controls the branch pages ----- */
+    .branch-nav-item a {
+        font-size: 24px;
+       
 }
