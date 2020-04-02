@@ -14,7 +14,7 @@ body{
 #title-header, #title-footer, .branch-header, .branch-footer{
     color:#cd853f;
 }
-.branch-header{
+.branch-header, .branch-footer{
     background-color:rgba(255, 250, 240,0.8);
 }
 
@@ -47,8 +47,18 @@ body{
     height:500px;
 }
 .branch-header{
+    position: fixed;
+    width:100%;
     height:100px;
     border-bottom:1px solid #cd853f;
+}
+
+.branch-footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:100px;
+    border-top:1px solid #cd853f;
 }
 
 /* ----- Text ----- */
@@ -108,6 +118,9 @@ body{
     letter-spacing: 6px;
     padding-right:25px;
     line-height:40px;
+}
+.branch-logo a:hover{
+    font-weight:400;
 }
 .logo-divider{
     display:none;
@@ -245,10 +258,15 @@ body{
         top:74px;
         right:125px;    
     }
+    .branch-product-menu li a {
+        font-size:12px;
+    } 
 }
 @media (min-width:1200px){
     .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
-        right:115px;    
+        display:inline-block;
+        position: absolute;
+            
     }
     .branch-product-menu li a {
         font-size:14px;
@@ -283,7 +301,7 @@ body{
 .branch-nav-item a{
     text-decoration: none;
     color: #cd853f;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 2px;   
 }
@@ -341,6 +359,8 @@ body{
         height:300px;
     }
 }
+
+/* ----- Branch Page Footer ----- */
 
 /* ----- Media Queries ----- */
 
