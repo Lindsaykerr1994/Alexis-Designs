@@ -155,12 +155,11 @@ body{
     font-weight:400;
 }
 
-/* ----- This is a sub-division of the Title Page Nav-Bar ----- */
+/* ----- This is a sub-division of the Title/Branch Page Nav-Bar ----- */
 /* ----- Products Dropdown ----- */
 
 .product-menu {
     display: none;
-    position: fixed;
     align-self: flex-end;
     background-color: #fffaf0;
     border: 1px solid #cd853f;
@@ -172,24 +171,109 @@ body{
     text-align: center;
     text-decoration: none;
     display: block;
+}
+.branch-product-menu {
+    display: none;
+    align-self: flex-end;
+    background-color: #fffaf0;
+    border: 1px solid #cd853f;
+    z-index: 1; 
+}
+.branch-product-menu li a {
+    color: #cd853f;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size:12px;
+    margin:0 10px;
+}
+.branch-product-menu li a:last-child{
+    margin-bottom:5px;
+}
+.product-nav-item a:hover{
+    font-weight:400;
+}
+#misc{
+    display: none;
+}
+/*-----The Products menu will dropdown in screens min-width:800 on the title page-----*/
+@media (min-width:800px){
+    .products:hover + .product-menu, .product-menu:hover{
+        display:inline-block;
+        position: absolute;
+        bottom:15px;
+    }
     
 }
-/*-----The Products menu will dropdown in screens min-width:800-----*/
-@media (min-width:800px){
-
+@media (min-width:1200px){
     .products:hover + .product-menu, .product-menu:hover{
         display:inline-block;
     }
 }
-
+/*-----The Products menu will dropdown on every size for branch pages-----*/
+@media (max-width:574px){
+    .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
+        display:block;
+        position: absolute;
+        width:100%;      
+    }
+    .branch-product-menu li {
+        display:inline-block;
+    }
+    .branch-product-menu{
+        height:26px;
+        border-left:0px;
+    }
+    .product-nav-item{
+        width:23%!important;
+    }
+    .branch-product-menu li a {
+        font-size:12px;
+        padding:0;
+    }
+    #miscellaneous{
+        display: none;
+    }
+    #misc{
+        display: inline-block;
+    }
+}
+@media (min-width:575px){
+    .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
+        display:inline-block;
+        position: absolute;
+        top:74px;
+        right:125px;    
+    }
+}
+@media (min-width:1200px){
+    .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
+        right:115px;    
+    }
+    .branch-product-menu li a {
+        font-size:14px;
+    } 
+}
+@media (min-width:1500px){
+    .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
+        display:inline-block;
+        position: absolute;
+        top:74px;
+        right:175px;    
+    }
+    .branch-product-menu li a {
+        font-size:20px;
+    }
+}
 /* ----- Branch Page Nav-Bar ----- */
-
+.branch-nav-bar ul{
+    margin-bottom: 0;
+}
 .branch-nav-list{
-    display:flex;
     width:auto;
     line-height: 50px;
     padding-right:10px;
-    margin-bottom: 0;
+    
 }
 .branch-nav-list li{
     text-align:center;
@@ -203,6 +287,13 @@ body{
     font-weight: 300;
     letter-spacing: 2px;   
 }
+.branch-nav-item:hover{
+    background-color: rgba(255, 250, 240,0.2);
+
+}
+.branch-nav-item a:hover{
+    font-weight:400;
+}
 
 /* ----- Social Links Bar ----- */
 
@@ -213,7 +304,6 @@ body{
     border-right: 1px solid #cd853f;
     font-size:20px;
 }
-
 .title-social-bar i{
     padding:10px 0;
     margin:0 20px;
@@ -233,15 +323,12 @@ body{
 .seconndary-carousel{
     display: none;
 }
-
 .carousel-control-prev, .carousel-control-next{
     opacity: 0;
 }
-
 .carousel-container:hover + .carousel-control-prev +.carousel-control-next +{
     opacity: 0.5;
 }
-
 @media (max-width:800px){
 
     #title-main-content{
@@ -254,7 +341,6 @@ body{
         height:300px;
     }
 }
-
 
 /* ----- Media Queries ----- */
 
@@ -309,6 +395,9 @@ body{
     .branch-nav-bar{
         background-color: rgba(255, 250, 240,0.2);
     }
+    .branch-nav-list{
+        width:100%;
+    }
     .branch-nav-list li{
         width:auto;
         padding:0;
@@ -326,6 +415,12 @@ body{
         
         padding:0;
         line-height: 25px;
+    }
+}
+@media (min-width: 575px){
+    .branch-nav-list{
+        float:right;
+        padding-right: 25px;
     }
 }
 @media (min-width: 2000px){
@@ -396,6 +491,6 @@ body{
     }
     /* ----- This section controls the branch pages ----- */
     .branch-nav-item a {
-        font-size: 24px;
-       
+        font-size: 24px;   
+    }
 }
