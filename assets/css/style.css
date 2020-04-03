@@ -361,6 +361,51 @@ body{
 }
 
 /* ----- Branch Page Footer ----- */
+.footer-left{
+    display: inline-block;
+    width:24%;
+    
+}
+.website-details{
+    padding:20px 0 0 20px;
+    line-height: 10px;
+    font-size:14px;
+}
+.website-details p{
+    padding-bottom: 5px;
+}
+.website-details p a{
+    text-decoration: none;
+    color: #cd853f;
+}
+.website-details p a:hover{
+    font-weight: 500;
+    color: #646464;
+}
+.footer-center{
+    display: inline-block;
+    width:50%;
+}
+.footer-right{
+    display: inline-block;
+    width:24%;
+}
+.branch-social-links{
+    padding:20px 20px 0 0;
+    line-height: 10px;
+    font-size:14px;
+}
+.branch-social-links p a i{
+    font-size: 16px;
+    padding:5px 10px;
+}
+..branch-social-links p a i:first-child{
+    padding-left:0px;
+}
+.branch-social-links p a i:hover{
+    font-size:18px;
+    color: #646464;
+}
 
 /* ----- Media Queries ----- */
 
