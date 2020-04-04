@@ -10,12 +10,11 @@ body{
     
     background-image: url("../images/a-d-bg2.jpeg"); 
 }
-
 #title-header, #title-footer, .branch-header, .branch-footer{
     color:#cd853f;
 }
 .branch-header, .branch-footer{
-    background-color:rgba(255, 250, 240,0.8);
+    background-color:rgba(255, 250, 240,1);
 }
 
 
@@ -48,6 +47,7 @@ body{
 }
 .branch-header{
     position: fixed;
+    top:0px;
     width:100%;
     height:100px;
     border-bottom:1px solid #cd853f;
@@ -259,17 +259,17 @@ body{
         right:125px;    
     }
     .branch-product-menu li a {
-        font-size:12px;
+        font-size:14px;
     } 
 }
 @media (min-width:1200px){
     .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
         display:inline-block;
         position: absolute;
-            
+        
     }
     .branch-product-menu li a {
-        font-size:14px;
+        font-size:12px;
     } 
 }
 @media (min-width:1500px){
@@ -277,10 +277,21 @@ body{
         display:inline-block;
         position: absolute;
         top:74px;
+        right:125px;    
+    }
+    .branch-product-menu li a {
+        font-size:16px;
+    }
+}
+@media (min-width:2000px){
+    .products:hover ~ .branch-product-menu, .branch-product-menu:hover{
+        display:inline-block;
+        position: absolute;
+        top:74px;
         right:175px;    
     }
     .branch-product-menu li a {
-        font-size:20px;
+        font-size:18px;
     }
 }
 /* ----- Branch Page Nav-Bar ----- */
@@ -380,7 +391,7 @@ body{
 }
 .website-details p a:hover{
     font-weight: 500;
-    color: #646464;
+    color: #868686;
 }
 .footer-center{
     display: inline-block;
@@ -396,15 +407,80 @@ body{
     font-size:14px;
 }
 .branch-social-links p a i{
+    color:#cd853f;
     font-size: 16px;
     padding:5px 10px;
 }
-..branch-social-links p a i:first-child{
+.branch-social-links p a i:first-child{
     padding-left:0px;
 }
 .branch-social-links p a i:hover{
     font-size:18px;
-    color: #646464;
+    color: #868686;
+}
+/* ----- About Content ----- */
+/* ----- About Content ----- */
+/* ----- Contact Content ----- */
+.contact-container{
+    color:#868686;
+    margin:175px 200px;
+    background-color: rgba(255, 250, 240,1)
+}
+.content-header{
+    padding:25px 0 0 50px;
+    font-family: "Gotu", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.content-header a{
+    font-size:12px;
+    color:#868686;
+}
+.content-header p{
+    width:14%;
+    padding-top: 25px;
+    font-size:30px;
+    border-bottom: 1px solid #868686;
+}
+.contact-content{
+    padding:50px 0 0 75px;
+    
+}
+.contact-content p{
+    padding-bottom:5px;
+}
+.contact-content a{
+    color:#df852c;
+    text-decoration: underline;
+}
+.contact-social-list{
+    padding:0 25px 10px 25px;
+    list-style: none;
+}
+.contact-social-list li i{
+    padding:10px 5px;
+    color:#df852c;
+}
+.contact-form{
+    font-family: "Gotu" sans-serif;
+    padding:50px 0 0 50px;
+}
+#full-name,#email-address{
+    border:1px solid #df852c;
+    width:400px;
+}
+#your-message{
+    border:1px solid #df852c;
+    width:1200px;
+    height:400px;
+}
+#send-button{
+    height:35px;
+    margin-top:5px;
+    padding-top:2px;
+    color:#868686;
+    border:1px solid #868686;
+    width:150px;
 }
 
 /* ----- Media Queries ----- */
