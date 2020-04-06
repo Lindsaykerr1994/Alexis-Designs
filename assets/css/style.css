@@ -47,6 +47,7 @@ body{
 }
 .branch-header{
     position: fixed;
+    z-index:1;
     top:0px;
     width:100%;
     height:100px;
@@ -55,9 +56,11 @@ body{
 
 .branch-footer{
     position: fixed;
+    z-index:1;
+    color:#a8a8a8;
     bottom:0;
     width:100%;
-    height:100px;
+    height:75px;
     border-top:1px solid #cd853f;
 }
 
@@ -327,7 +330,7 @@ body{
 /* ----- Social Links Bar ----- */
 
 .title-social-bar{
-    width:240px;
+    width:320px;
     margin-top:20px;
     border-left: 1px solid #cd853f;
     border-right: 1px solid #cd853f;
@@ -336,7 +339,9 @@ body{
 .title-social-bar i{
     padding:10px 0;
     margin:0 20px;
+    color:#cd853f;
 }
+
 
 /* ----- Carousel -----*/
 .carousel-container{
@@ -374,12 +379,9 @@ body{
 /* ----- Branch Page Footer ----- */
 .footer-left{
     display: inline-block;
-    width:24%;
-    
+    width:33%;
 }
-.website-details{
-    padding:20px 0 0 20px;
-    line-height: 10px;
+.website-details{   
     font-size:14px;
 }
 .website-details p{
@@ -387,43 +389,38 @@ body{
 }
 .website-details p a{
     text-decoration: none;
-    color: #cd853f;
+    color: #a8a8a8;
 }
 .website-details p a:hover{
     font-weight: 500;
-    color: #868686;
+    color: #cd853f;
 }
 .footer-center{
     display: inline-block;
-    width:50%;
+    width:33%;
 }
 .footer-right{
     display: inline-block;
-    width:24%;
+    width:33%;
 }
-.branch-social-links{
-    padding:20px 20px 0 0;
-    line-height: 10px;
-    font-size:14px;
-}
-.branch-social-links p a i{
-    color:#cd853f;
+.branch-social-links a i{
+    color:#a8a8a8;
     font-size: 16px;
     padding:5px 10px;
 }
-.branch-social-links p a i:first-child{
+.branch-social-links a i:first-child{
     padding-left:0px;
 }
-.branch-social-links p a i:hover{
+.branch-social-links a i:hover{
     font-size:18px;
-    color: #868686;
+    color: #cd853f;
 }
 /* ----- About Content ----- */
-/* ----- About Content ----- */
+/* ----- Products Content ----- */
 /* ----- Contact Content ----- */
 .contact-container{
     color:#868686;
-    margin:175px 200px;
+    margin:175px; 10%;
     background-color: rgba(255, 250, 240,1)
 }
 .content-header{
@@ -437,13 +434,13 @@ body{
     color:#868686;
 }
 .content-header p{
-    width:14%;
+    width:auto;
     padding-top: 25px;
     font-size:30px;
-    border-bottom: 1px solid #868686;
+    text-decoration: underline;
 }
 .contact-content{
-    padding:50px 0 0 75px;
+    padding:25px 0 0 50px;
     
 }
 .contact-content p{
@@ -460,6 +457,9 @@ body{
 .contact-social-list li i{
     padding:10px 5px;
     color:#df852c;
+}
+.location-grid h5, .location-grid p{
+    padding-bottom: 3px;
 }
 .contact-form{
     font-family: "Gotu" sans-serif;
@@ -547,6 +547,32 @@ body{
         font-size: 12px;
         margin: 0 5px;
     }
+    /* This was done not using bootstraps "no-gutters" as it removes all childrens' padding */
+    .branch-footer{
+        margin: auto 0!important;
+    }
+    .footer-center{
+        display:none;
+    }
+    /*This needs to be below footer-center due to ordering */
+    .footer-left, .footer-right{
+        width:50%;
+    }
+    .website-details{
+        font-size:10px;
+    }
+    .branch-social-links a i{
+        font-size:14px;
+    }
+    .contact-container{
+        margin:20% 10%;
+    }
+    .content-header{
+        padding:25px 0 0 5%;
+    }
+    .contact-content{
+    padding:25px 0 0 5%;
+    }
 }
 @media (max-width:575px){
     .branch-logo{
@@ -556,6 +582,9 @@ body{
         
         padding:0;
         line-height: 25px;
+    }
+    .contact-container{
+        margin:165px 10%;
     }
 }
 @media (min-width: 575px){
