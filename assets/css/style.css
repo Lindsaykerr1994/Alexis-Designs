@@ -342,40 +342,6 @@ body{
     color:#cd853f;
 }
 
-
-/* ----- Carousel -----*/
-.carousel-container{
-    margin:25px auto;
-    max-width:450px;
-    max-height:450px;
-}
-.carousel-inner{
-    padding:5px;
-    overflow: hidden;
-}
-/* ----- This hides the secondary carousels on screens max-width:1600px -----*/
-.seconndary-carousel{
-    display: none;
-}
-.carousel-control-prev, .carousel-control-next{
-    opacity: 0;
-}
-.carousel-container:hover + .carousel-control-prev +.carousel-control-next +{
-    opacity: 0.5;
-}
-@media (max-width:800px){
-
-    #title-main-content{
-        height:300px;
-    }
-
-    .carousel-container{
-        margin:0 auto;
-        width:300px;
-        height:300px;
-    }
-}
-
 /* ----- Branch Page Footer ----- */
 .footer-left{
     display: inline-block;
@@ -415,13 +381,100 @@ body{
     font-size:18px;
     color: #cd853f;
 }
+
+/* ----- Carousel -----*/
+.carousel-container{
+    margin:25px auto;
+    max-width:450px;
+    max-height:450px;
+}
+.carousel-inner{
+    padding:5px;
+    overflow: hidden;
+}
+/* ----- This hides the secondary carousels on screens max-width:1600px -----*/
+.seconndary-carousel{
+    display: none;
+}
+.carousel-control-prev, .carousel-control-next{
+    opacity: 0;
+}
+.carousel-container:hover + .carousel-control-prev +.carousel-control-next {
+    opacity: 0.5;
+}
+@media (max-width:800px){
+
+    #title-main-content{
+        height:300px;
+    }
+
+    .carousel-container{
+        margin:0 auto;
+        width:300px;
+        height:300px;
+    }
+}
+
 /* ----- About Content ----- */
+.about-container{
+    color:#868686;
+    margin:175px 5%;
+    background-color: rgba(255, 250, 240,1);
+}
+.about-header{
+    padding:25px 0 0 50px;
+    font-family: "Gotu", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.about-header a{
+    font-size:12px;
+    color:#868686;
+}
+.about-header h3{
+    width:auto;
+    padding-top: 25px;
+    font-size:30px;
+    text-decoration: underline;
+}
+.about-container p{
+    display: inline-block;
+    margin-bottom:0px;
+}
+.about-container h5{
+    text-decoration: underline;
+    display: block;
+}
+.about-batik-container{
+    padding:25px 50px;
+}
+.about-batik-text,.about-alexis-text{
+    display: flex;
+}
+.about-batik-container img{
+    max-width: 200px;
+    padding:5px;
+    border: 1px solid #df852c;
+    margin-right:10px;
+    display: inline-block;
+}
+
+.about-alexis-container{
+    padding:25px 50px 50px 50px;
+}
+.about-alexis-container img{
+    max-width:200px;
+    padding:5px;
+    border: 1px solid #df852c;
+    display:inline-block;
+    margin-left:10px;
+}
 /* ----- Products Content ----- */
 /* ----- Contact Content ----- */
 .contact-container{
     color:#868686;
-    margin:175px; 10%;
-    background-color: rgba(255, 250, 240,1)
+    margin:175px 5%;
+    background-color: rgba(255, 250, 240,1);
 }
 .content-header{
     padding:25px 0 0 50px;
@@ -433,7 +486,7 @@ body{
     font-size:12px;
     color:#868686;
 }
-.content-header p{
+.content-header h3{
     width:auto;
     padding-top: 25px;
     font-size:30px;
@@ -441,7 +494,6 @@ body{
 }
 .contact-content{
     padding:25px 0 0 50px;
-    
 }
 .contact-content p{
     padding-bottom:5px;
@@ -457,6 +509,9 @@ body{
 .contact-social-list li i{
     padding:10px 5px;
     color:#df852c;
+}
+.location-grid{
+    padding-bottom:25px;
 }
 .location-grid h5, .location-grid p{
     padding-bottom: 3px;
@@ -586,7 +641,29 @@ body{
     .contact-container{
         margin:165px 10%;
     }
+    .about-container{
+        margin-top:150px;
+        margin-bottom: 100px;
+    }
+    .about-header{
+        padding:25px 0 0 5%;
+    }
+    .about-alexis-container, .about-batik-container{
+        padding:25px 5%;
+    }
+    .about-alexis-container img, .about-batik-container img{
+        float:left;
+        margin-left:0px;
+        margin-right:10px;
+        width:60%;
+        clear:both;
+        
+    }
+    .about-alexis-container p,.about-batik-container p{
+        font-size:12px;
+    }
 }
+
 @media (min-width: 575px){
     .branch-nav-list{
         float:right;
