@@ -458,7 +458,6 @@ body{
     margin-right:10px;
     display: inline-block;
 }
-
 .about-alexis-container{
     padding:25px 50px 50px 50px;
 }
@@ -470,6 +469,56 @@ body{
     margin-left:10px;
 }
 /* ----- Products Content ----- */
+.product-container{
+    color:#868686;
+    margin:175px 5%;
+    background-color: rgba(255, 250, 240,1);
+}
+.product-header{
+    padding:25px 0 0 50px;
+    font-family: "Gotu", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.product-header a{
+    font-size:12px;
+    color:#868686;
+}
+.product-header h3{
+    width:auto;
+    padding-top: 25px;
+    font-size:30px;
+    text-decoration: underline;
+}
+.product-header-links{
+    width:80%;
+    margin:10px auto; 
+}
+.product-header-links p{
+    font-size:14px;
+}
+.product-header-links li{
+    width:20%;
+    text-align:center;
+    margin:0 auto;
+    border-left: 1px solid #a8a8a8;
+    border-right: 1px solid #a8a8a8;
+}
+.product-header-links li a{
+    padding:0 10px;
+    font-size:14px;
+    text-decoration: none;
+}
+.product-display-container{
+    padding:25px 50px;
+}
+.product-display-container h5{
+    text-decoration: underline;
+}
+.product-display-container .row{
+    margin:10px auto;
+}
+
 /* ----- Contact Content ----- */
 .contact-container{
     color:#868686;
