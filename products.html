@@ -87,42 +87,197 @@
 				<div class="product-header-links text-center">
 					<p class="uppercase fine">Jump to:</p>
 					<ul class="list-inline">
-						<li class="list-inline-item"><a href="#quilt-container"
-								class="hvr-underline-from-center">Quilts</a></li>
-						<li class="list-inline-item"><a href="#jacket-container"
-								class="hvr-underline-from-center">Jackets</a></li>
-						<li class="list-inline-item"><a href="#bag-container" class="hvr-underline-from-center">Bag</a>
+						<li class="list-inline-item hvr-underline-from-center">
+                            <a href="#quilt-container">Quilts</a>
+                        </li>
+						<li class="list-inline-item hvr-underline-from-center">
+                            <a href="#jacket-container">Jackets</a>
+                        </li>
+						<li class="list-inline-item hvr-underline-from-center">
+                            <a href="#bag-container">Bag</a>
 						</li>
-						<li class="list-inline-item"><a href="#misc-container"
-								class="hvr-underline-from-center">Miscellaneous</a></li>
+						<li class="list-inline-item hvr-underline-from-center">
+                            <a href="#misc-container">Miscellaneous</a>
+                        </li>
 					</ul>
 				</div>
 			</div>
 			<div class="product-display-container">
+            <!--All modal components are resourced from Bootstrap-->
 				<div id="quilt-container">
-					<h5 class="uppercase">Quilts</h5>
+					<h5 class="uppercase text-center">Quilts</h5>
 					<div class="row">
 						<div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#quilt-modal-1" id="blue-quilt-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="quilt-modal-1" tabindex="-1" role="dialog"
+								aria-labelledby="quilt-modal-title-1" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="quilt-modal-title-1">Blue Quilt with Central Motif</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/quilts/blue-quilt-display.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="col-sm">
+                            <!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+                            <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#quilt-modal-2" id="green-quilt-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="quilt-modal-2" tabindex="-1" role="dialog"
+								aria-labelledby="quilt-modal-title-2" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="quilt-modal-title-2">Green Quilt with Central Motif</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/quilts/green-quilt-style-1.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="col-sm">
+                            <!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+							<div class="modal-button-container">
+                            <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#quilt-modal-3" id="red-quilt-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="quilt-modal-3" tabindex="-1" role="dialog"
+								aria-labelledby="quilt-modal-title-3" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="quilt-modal-title-3">Red and Green Gradient Quilt</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/quilts/red-green-quilt.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div id="jacket-container">
-					<h5 class="uppercase">Jackets</h5>
+					<h5 class="uppercase text-center">Jackets</h5>
 					<div class="row">
 						<div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#jacket-modal-1" id="black-jacket-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="jacket-modal-1" tabindex="-1" role="dialog"
+								aria-labelledby="jacket-modal-title-1" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="jacket-modal-title-1">Black and White Jacket</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/jackets/black-jacket.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm">
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#jacket-modal-2" id="green-jacket-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="jacket-modal-2" tabindex="-1" role="dialog"
+								aria-labelledby="jacket-modal-title-2" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="jacket-modal-title-2">Green/Brown Jacket</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/jackets/green-jacket.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm">
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#jacket-modal-3" id="blue-jacket-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="jacket-modal-3" tabindex="-1" role="dialog"
+								aria-labelledby="jacket-modal-title-3" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="jacket-modal-title-3">Blue Jacket</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/jackets/blue-jacket.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div id="bag-container">
-					<h5 class="uppercase">Bags</h5>
+					<h5 class="uppercase text-center">Bags</h5>
 					<div class="row">
 						<div class="col-sm">
 						</div>
@@ -133,14 +288,148 @@
 					</div>
 				</div>
 				<div id="misc-container">
-					<h5 class="uppercase">Miscellaneous</h5>
+					<h5 class="uppercase text-center">Miscellaneous</h5>
 					<div class="row">
 						<div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#misc-modal-1" id="glasses-cases-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="misc-modal-1" tabindex="-1" role="dialog"
+								aria-labelledby="misc-modal-title-1" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="misc-modal-title-1">Glasses Sleeves</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/miscellaneous/blue-glasses-cases.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm">
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#misc-modal-2" id="tissue-box-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="misc-modal-2" tabindex="-1" role="dialog"
+								aria-labelledby="misc-modal-title-2" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="misc-modal-title-2">Tissue Box Covers</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/miscellaneous/tissue-box-1.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-sm">
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#misc-modal-3" id="bottle-bag-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="misc-modal-3" tabindex="-1" role="dialog"
+								aria-labelledby="misc-modal-title-3" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="misc-modal-title-3">Bottle Bags</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/miscellaneous/tissue-box-1.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#misc-modal-4" id="pillow-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="misc-modal-4" tabindex="-1" role="dialog"
+								aria-labelledby="misc-modal-title-4" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="misc-modal-title-4">Pillows</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/miscellaneous/green-pillow.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="col-sm">
+							<!-- Button trigger modal -->
+                            <!-- Each new modal needs a unique button id-->
+                            <div class="modal-button-container">
+							<button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target="#misc-modal-4" id="coin-purse-display">
+                            </button>
+                            </div>
+                            <!-- Each new modal needs a unique div id-->
+							<!-- Modal -->
+							<div class="modal fade" id="misc-modal-5" tabindex="-1" role="dialog"
+								aria-labelledby="misc-modal-title-5" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header text-center">
+											<h5 class="modal-title" id="misc-modal-title-5">Coin Purses</h5>
+										</div>
+										<div class="modal-body text-center">
+											<img src="assets/images/products/miscellaneous/coin-purse-collection.jpg">
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Buy now</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <!-- This final col-sm div was put in place to main the grid system of 3 across -->
+                        <div class="col-sm">
+                        </div>
 					</div>
 				</div>
 			</div>

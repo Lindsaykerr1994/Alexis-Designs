@@ -453,6 +453,7 @@ body{
 }
 .about-batik-container img{
     max-width: 200px;
+    max-height: 200px;
     padding:5px;
     border: 1px solid #df852c;
     margin-right:10px;
@@ -518,7 +519,100 @@ body{
 .product-display-container .row{
     margin:10px auto;
 }
-
+/* ----- Product Modals ----- */
+/* ----- This will dictate the size of the buttons and background ----- */
+.modal-button-container{
+    width:210px;
+    height:210px;
+    border: 1px solid #df852c;
+    border-radius: 4px;
+    margin:20px auto;
+}
+.modal-button{
+    width:200px;
+    height:200px;
+    margin:5px;
+}
+.btn-primary{
+    background-color: #df852c;
+    border:#df852c;
+}
+.btn-primary:hover{
+    background-color: #aa6a2c;
+}
+.btn-primary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(205,133,63,.5)
+}
+/* ----- This centers the header ----- */
+.modal-header{
+    display: inline;
+}
+/* ----- This will dictate the size of the image in the modal  ----- */
+.modal-body img{
+    width:400px;
+    height:400px; 
+}
+/* ----- Each modal requires a different background ----- */
+/* ----- Each id refers to the button shown on products.html ----- */
+/* ----- Quilt Buttons ----- */
+#blue-quilt-display{
+    background-image: url(../images/products/quilts/blue-quilt-display.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#green-quilt-display{
+    background-image: url(../images/products/quilts/green-quilt-style-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#red-quilt-display{
+    background-image: url(../images/products/quilts/red-green-quilt.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* ----- Jacket Buttons ----- */
+#black-jacket-display{
+    background-image: url(../images/products/jackets/black-jacket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#green-jacket-display{
+    background-image: url(../images/products/jackets/green-jacket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#blue-jacket-display{
+    background-image: url(../images/products/jackets/blue-jacket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* ----- Bag Buttons ----- */
+/* ----- Miscellaneous Buttons ----- */
+#glasses-cases-display{
+    background-image: url(../images/products/miscellaneous/blue-glasses-cases.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#tissue-box-display{
+    background-image: url(../images/carousel/breakfast-table-tissues.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bottle-bag-display{
+    background-image: url(../images/products/miscellaneous/bottle-bags-collection.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#pillow-display{
+    background-image: url(../images/products/miscellaneous/green-pillow.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#coin-purse-display{
+    background-image: url(../images/products/miscellaneous/coin-purse-collection.jpg);
+    background-position: center;
+    background-size: cover;
+}
 /* ----- Contact Content ----- */
 .contact-container{
     color:#868686;
