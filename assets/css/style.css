@@ -551,6 +551,7 @@ body{
     font-size:14px;
     color:#a8a8a8;
     text-align: center;
+    text-decoration: underline;
 }
 .btn-primary{
     background-color: #df852c;
