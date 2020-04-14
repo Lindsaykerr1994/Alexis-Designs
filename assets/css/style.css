@@ -854,6 +854,11 @@ body{
         max-width:100%;
         left:0;
     }
+    .modal-body img {
+        width:365px;
+        height:365px;
+        margin: auto;
+    }
 }
 @media (max-width:320px){
     .product-display-container{
@@ -866,6 +871,11 @@ body{
     .modal-button-container{
         width:150px;
         height:150px;
+    }
+    .modal-body img {
+        width:260px;
+        height:260px;
+        margin: auto;
     }
 }
 @media (min-width: 575px){
