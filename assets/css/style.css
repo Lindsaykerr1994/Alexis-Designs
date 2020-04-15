@@ -451,22 +451,24 @@ body{
 .about-batik-text,.about-alexis-text{
     display: flex;
 }
-.about-batik-container img{
+.about-batik-text img{
+    float:left;
     max-width: 200px;
     max-height: 200px;
     padding:5px;
     border: 1px solid #df852c;
     margin-right:10px;
-    display: inline-block;
+    
 }
 .about-alexis-container{
     padding:25px 50px 50px 50px;
 }
-.about-alexis-container img{
+.about-alexis-text img{
+    float: right;
     max-width:200px;
     padding:5px;
     border: 1px solid #df852c;
-    display:inline-block;
+    
     margin-left:10px;
 }
 /* ----- Products Content ----- */
@@ -683,6 +685,7 @@ body{
 }
 .location-grid h5, .location-grid p{
     padding-bottom: 3px;
+    text-align:center;
 }
 .contact-form{
     font-family: "Gotu" sans-serif;
@@ -828,14 +831,14 @@ body{
     .about-alexis-container, .about-batik-container{
         padding:25px 5%;
     }
-    .about-alexis-container img, .about-batik-container img{
-        float:left;
+     .about-alexis-container img, .about-batik-container img{
+        float:right;
         margin-left:0px;
         margin-right:10px;
         width:60%;
         clear:both;
     }
-    .about-alexis-container p,.about-batik-container p{
+     .about-alexis-container p,.about-batik-container p{
         font-size:12px;
     }
     .product-header{
