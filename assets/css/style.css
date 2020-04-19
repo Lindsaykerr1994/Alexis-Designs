@@ -614,6 +614,16 @@ body{
     background-size: cover;
 }
 /* ----- Bag Buttons ----- */
+#drawstring-bag-display{
+    background-image: url(../images/products/bags/grey-bag.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#zipped-bag-display{
+    background-image: url(../images/products/bags/black-bags.jpg);
+    background-position: center;
+    background-size: cover;
+}
 /* ----- Miscellaneous Buttons ----- */
 #glasses-cases-display{
     background-image: url(../images/products/miscellaneous/blue-glasses-cases.jpg);
