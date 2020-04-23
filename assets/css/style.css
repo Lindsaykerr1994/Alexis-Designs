@@ -53,7 +53,6 @@ body{
     height:100px;
     border-bottom:1px solid #cd853f;
 }
-
 .branch-footer{
     position: fixed;
     z-index:1;
@@ -177,7 +176,7 @@ body{
 .product-menu {
     display: none;
     align-self: flex-end;
-    background-color: #fffaf0;
+    background-color: #f8f8f8;
     border: 1px solid #cd853f;
     width:180px;
     z-index: 1; 
@@ -191,7 +190,7 @@ body{
 .branch-product-menu {
     display: none;
     align-self: flex-end;
-    background-color: #fffaf0;
+    background-color: #f8f8f8;
     border: 1px solid #cd853f;
     z-index: 1; 
 }
@@ -818,6 +817,13 @@ body{
     #misc2{
         display:inline-block;
     }
+    .modal-button{
+        width:140px;
+        height:140px;
+    }
+    .modal-button-container{
+        width:150px;
+        height:150px;
 }
 @media (max-width:575px){
     .branch-logo{
@@ -877,13 +883,7 @@ body{
     .product-display-container{
         padding:25px;
     }
-    .modal-button{
-        width:140px;
-        height:140px;
-    }
-    .modal-button-container{
-        width:150px;
-        height:150px;
+    
     }
     .modal-body img {
         width:260px;
