@@ -1,10 +1,10 @@
 https://github.com/Lindsaykerr1994/alexis-designs
 
-#Welcome to Alexis Designs
+# Welcome to Alexis Designs
 
 Alexis Designs to be an online commercial website, intending to display and advertise the products created by Alexis Designs, a company that handcrafts clothing, quilts and other small person items using batiks. Batik is a traditional Malaysian and Indonesian fabric.
 
-##Table of Contents
+## Table of Contents
 * [UX] (#ux)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
