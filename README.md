@@ -5,14 +5,15 @@ https://github.com/Lindsaykerr1994/alexis-designs
 Alexis Designs to be an online commercial website, intending to display and advertise the products created by Alexis Designs, a company that handcrafts clothing, quilts and other small person items using batiks. Batik is a traditional Malaysian and Indonesian fabric.
 
 ##Table of Contents
-* [Introduction](#introduction)
-* [List of Pages](#list-of-pages)
-* [Illustrations and pohotographs](#illustraions-and-photographs)
-* [Technologies](#technologies)
-* [Scope of Functionality](#scope)
+* [UX] (#ux)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
 
-##UX
+## UX
 
 It is the purpose of this website to attracting potential customers to browse upon the products offered by Alexis Designs. Alexis Designs is a company based in Malaysia that handcrafts clothing and personal items such as quilts, coin purses and bottle sleeves. 
 Originally Alexis Designs was only able to advertise their goods by attending weekend markets, sales conventions and through word of mouth. This website will allow them to spread awareness of the company, and hopefully increase sales, through request sent online, or so that potential clients can find out where they can purchase items in person.
@@ -52,11 +53,11 @@ Feature 2- Provide a comment section in which users can leave any comments or ra
 Feature 3 -Provide a map service to locate upcoming sales, as found on the Contact Page. This will hopefully encourage any nearby potential clients to visit any sales events Alexis Designs will be attending, increasing foot traffic.
 
 
-##Technologies Used
+## Technologies Used
 
 There were several libraries that helped create this website. Most noticably are the components found over several pages, such as the carousels and modal windows.
 
-###Libraries
+### Libraries
 
 Bootstrap 4 - The carousels and modal windows were sourced from Bootstrap. I imported the original components, and then modified them as required. Some styles were adjusted in style.css, generally, colouring and sizes. 
 https://getbootstrap.com/
@@ -72,7 +73,7 @@ https://fonts.google.com/
 CSS Hover - I used the stylings from this website to decorate links found throught the website, in particular I used 'Underline Reveal' for directory links.
 https://ianlunn.github.io/Hover/
 
-###Additonal resources
+### Additonal resources
 
 W3Schools - While no code was sourced from this website, I relied on troubleshooting any difficulties I had on this website. Additionally, I used this website to troubleshoot my dropdown menus on the navigation bar.
 https://www.w3schools.com/css/css_dropdowns.asp
@@ -83,7 +84,7 @@ https://encycolorpedia.com/646464
 Code Institute - I was able to use a README template to write my own, the one you are currently reading.
 https://github.com/Code-Institute-Solutions/readme-template
 
-##Troubleshooting & Testing 
+## Testing 
 
 Increase traffic to and awareness of Alexis Designs.
     As this site has not yet gone live, I am unable to verify if any traffic has occured yet, however as this website will be advertise on all social media profiles  and business cards, traffic will hopefully rise.
@@ -100,25 +101,25 @@ Allow users to arrange purchasing product.
         Each input requires an input, for example: A valid email in the appropriate input.
         Unless each input has been filled with an appropriate entry, the form will return an error message.
 
-##Deployment
+## Deployment
 
 I will be hosting this website through GitHub, and can be found at https://lindsaykerr1994.github.io/alexis-designs/
 
 
 ## Credits
 
-###Illustrations and photographs
+### Illustrations and photographs
 
 All photographs displayed on the website are used with the permission of Rebeccah Wilkinson, who took the photos on behalf of Alexis Kerr, to encourage sales and awareness of the products.
 The background design was created by Lindsay Kerr, using an edited photo of a batik pattern. 
 
 All images used can be found in !Images(images)
 
-###Content
+### Content
 
 The section entitled 'About Batik' used https://en.wikipedia.org/wiki/Batik to cross refence any information. Alexis Kerr was able to provide me a brief synopsis about the fabric, however Wikipedia was used to flesh out this section.
 
-###Inspiration
+### Inspiration
 
 I thank Alexis Kerr for allowing me to use Alexis Designs as the subject of my User-Centric milestone project @ CodeInstitute.
 
