@@ -5,7 +5,7 @@ https://github.com/Lindsaykerr1994/alexis-designs
 Alexis Designs to be an online commercial website, intending to display and advertise the products created by Alexis Designs, a company that handcrafts clothing, quilts and other small person items using batiks. Batik is a traditional Malaysian and Indonesian fabric.
 
 ## Table of Contents
-* [UX] (#ux)
+* [UX](#ux)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
@@ -96,7 +96,7 @@ Promote any social media and in-person sales of Alexis Designs.
 Allow users to contact Alexis Designs.
 Allow users to arrange purchasing product.
     I have linked the forms found in the pages: Email & Purchase, to the company's official email address.
-    Upon filling out these forms, I received the following error message: "Error code: 501 Message: Unsupported method ('POST')." I believe this to be as I am testing this function on a simple HTTP server in Github, and that it is not supported.
+    Upon pushing the project, and attempting to send an email, I received an error code: "405 Not Allowed". I tried to rectify this by changing the action of the forms to "action=mailto:sample-email@gmail.com". However this did not fix it.
     However, I have set requirements for each form:
         Each input requires an input, for example: A valid email in the appropriate input.
         Unless each input has been filled with an appropriate entry, the form will return an error message.
