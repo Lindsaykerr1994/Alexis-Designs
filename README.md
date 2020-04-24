@@ -25,7 +25,10 @@ I strove to achieve this objectives by allowing visitors to browse the full sele
 Visitors are able to find external links to social media platforms, such as Instagram or Facebook, as well as read an updated list on where Alexis Designs will be in person to display products.
 Unfortunately, at the current time, the visitor is currently unable to purchase items directly from the website. However I hoped to increase sales by directing the user to contact Alexis Designs if they wished to arrange a purchase.
 
-Thirdly, any interested party can learn a little about Alexis, of Alexis Designs, and a brief introduction about the material, Batik.
+Thirdly, any interested party can learn a brief amount about Alexis, of Alexis Designs, and a brief introduction about the material, Batik.
+
+My wireframes diagrams are available to be reviewed at https://wireframepro.mockflow.com/view/M9276afb72ce0032120d8efb6601f99ee1587715627312 .This has been hosted on an in-browser wireframing program, MockFlow.
+
 
 ## Features
 
@@ -74,6 +77,9 @@ CSS Hover - I used the stylings from this website to decorate links found throug
 https://ianlunn.github.io/Hover/
 
 ### Additonal resources
+
+MockFlow - I used this in-browser program to create diagrams of my project, my wireframes, so that I would be able to get a sense how to construct and develop my project.
+https://wireframepro.mockflow.com/view/M9276afb72ce0032120d8efb6601f99ee1587715627312
 
 W3Schools - While no code was sourced from this website, I relied on troubleshooting any difficulties I had on this website. Additionally, I used this website to troubleshoot my dropdown menus on the navigation bar.
 https://www.w3schools.com/css/css_dropdowns.asp
