@@ -8,7 +8,14 @@ body{
     font-family: "Montserrat", sans-serif;
     /* background-color: #fffaf0; */
     
-    background-image: url("../images/a-d-bg2.jpeg"); 
+    background-color: #fffcf7; 
+}
+#title-header, #title-footer{
+    min-height: 25vh;
+    background-image: url("../images/a-d-bg2.jpeg");
+}
+#title-main-content{
+    height: 50vh;
 }
 #title-header, #title-footer, .branch-header, .branch-footer{
     color:#cd853f;
@@ -42,9 +49,6 @@ body{
 /* ----- Dimensions ----- */
 /* ----- This section dictates the dimensions of each element necessary ----- */
 
-#title-main-content{
-    height:500px;
-}
 .branch-header{
     position: fixed;
     z-index:1;
@@ -72,17 +76,15 @@ body{
 .fine{
     font-weight: 200;
 }
-
 /* ----- Title Header ----- */
 /* ----- This will serve as my logo for the title page ----- */
-
 #title-header{
-    padding-bottom:25px;
+    padding-top: calc(25vh - 108px);
 }
 .title-logo {
     text-align: center;
-    padding-top:125px;
     font-weight:300;
+    margin-top: 1%;
 }
 .title-logo a {
     text-decoration: none;
@@ -145,6 +147,9 @@ body{
 .title-nav-bar {
     padding-top:10px;
     text-align:center;
+}
+.title-nav-list {
+    margin-bottom: 0;
 }
 .title-nav-list li{
     width: 180px;
@@ -330,7 +335,6 @@ body{
 
 .title-social-bar{
     width:320px;
-    margin-top:20px;
     border-left: 1px solid #cd853f;
     border-right: 1px solid #cd853f;
     font-size:20px;
@@ -383,12 +387,14 @@ body{
 
 /* ----- Carousel -----*/
 .carousel-container{
-    margin:25px auto;
-    max-width:450px;
-    max-height:450px;
+    height:50vh;
+    width: 50vh;
+}
+.carousel-container img{
+    height:50vh;
+    width: auto;
 }
 .carousel-inner{
-    padding:5px;
     overflow: hidden;
 }
 /* ----- This hides the secondary carousels on screens max-width:1600px -----*/
